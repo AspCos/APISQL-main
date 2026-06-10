@@ -8,4 +8,4 @@ create table pays{
     nom text,
     drapeau text,
     long text,
-}
+};
