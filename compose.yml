@@ -17,3 +17,4 @@ services:
       - "3000:3000"
     environment:
       - PGRST_DB_URI=postgrest://root:supermotdepasse@database.cinema
+      - PGRST_DB_ANON_ROLE= guest
