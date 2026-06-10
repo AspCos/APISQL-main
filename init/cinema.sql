@@ -1,4 +1,12 @@
 create database cinema;
+create role postgrest noinherit login password 'abcdef';
+create role guest nologin;
+create role super nologin;
+
+grant guest to postgrest;
+grant super to postgrest;
+
+
 \c cinema;
 
 create table pays(
