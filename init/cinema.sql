@@ -9,3 +9,5 @@ create table pays{
     drapeau text,
     long text,
 };
+
+copy pays from '/docker-entrypoint-initdb.d/pays.csv' with csv header;
