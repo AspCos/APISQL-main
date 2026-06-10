@@ -1,4 +1,5 @@
-create DATABASE
+create database cinema;
+\c cinema;
 
 create table pays{
     code2 text,
