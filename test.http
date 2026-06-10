@@ -1,1 +1,7 @@
 GET http://localhost:30000/pays
+
+### filtre vertical
+GET http://localhost:30000/pays?select=code2,nom
+
+### filtre horizontal
+GET http://localhost:30000/pays?code2=eq.FR&select=code2,nom
