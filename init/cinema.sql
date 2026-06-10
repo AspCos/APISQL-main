@@ -1,13 +1,13 @@
 create database cinema;
 \c cinema;
 
-create table pays{
+create table pays(
     code2 text,
     code3 text,
     codenum text,
     nom text,
     drapeau text,
-    long text,
-};
+    long text
+);
 
 copy pays from '/docker-entrypoint-initdb.d/pays.csv' with csv header;
