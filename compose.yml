@@ -1,0 +1,8 @@
+name: api-cinema
+
+services:
+  database:
+    image: postgres:18.4-trixie
+    environnement:
+      POSTGRES_USER: ${POSTGRES_USER:-ROOT}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
