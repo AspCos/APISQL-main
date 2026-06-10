@@ -9,12 +9,12 @@ services:
     ports:
       - "5432:5432"
     volumes:
-      - ./init:/docker-entrypoint-initdb.d/
+      - ./init:/docker-entrypoint-initdb.d
   
   api:
     image: postgrest/postgrest:v14.13
     ports:
       - "3000:3000"
     environment:
-      - PGRST_DB_URI=postgrest://root:supermotdepasse@database.cinema
-      - PGRST_DB_ANON_ROLE= guest
+      PGRST_DB_URI: postgres://postgrest:abcdef@database/cinema
+      PGRST_DB_ANON_ROLE: guest

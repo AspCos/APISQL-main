@@ -20,8 +20,8 @@ create table pays(
 
 copy pays from '/docker-entrypoint-initdb.d/pays.csv' with csv header;
 
-grant usage on shema public to guest;
-grant usage on shema public to super;
+grant usage on schema public to guest;
+grant usage on schema public to super;
 
 grant select on pays to guest;
 grant select on pays to super;
